@@ -9,6 +9,7 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+
 /**
  * 
  * 
@@ -96,5 +97,13 @@ public class RpcServerLoader {
 	}
 	
 	public void unLoad(){
+		messageSendHandler.close();
+		threadPoolExcutor.shutdown();
+		eventLoopGroup.shutdownGracefully();
+	}
+	
+	//TODO 
+	public void setSerializeProtocol(){
+		
 	}
 }
