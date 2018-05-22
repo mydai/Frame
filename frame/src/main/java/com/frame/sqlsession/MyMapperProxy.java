@@ -13,6 +13,11 @@ public class MyMapperProxy implements InvocationHandler{
 	
 	private MyConfiguration myConfiguration;
 	
+	public MyMapperProxy(MyConfiguration myConfiguration,MySqlsession mySqlsession){
+		this.myConfiguration = myConfiguration;
+		this.mySqlsession = mySqlsession;
+	}
+	
 	@Override
 	public Object invoke(Object proxy, Method method, Object[] args)
 			throws Throwable {
