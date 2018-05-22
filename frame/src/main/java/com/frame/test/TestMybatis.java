@@ -11,6 +11,5 @@ public class TestMybatis {
 		UserMapper mapper = sqlsession.getMapper(UserMapper.class);
 		User user = mapper.getUserById("1");
 		System.out.println(user);
-		
 	}
 }

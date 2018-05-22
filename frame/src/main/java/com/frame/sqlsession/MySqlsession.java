@@ -14,7 +14,7 @@ public class MySqlsession {
 	}
 	
 	public <T> T getMapper(Class<T> clas){
-		//动态代理调用
+//		动态代理调用
 		return (T)Proxy.newProxyInstance(clas.getClassLoader(), new Class[]{clas}, new MyMapperProxy(myConfiguration,this));
 	}
 }
