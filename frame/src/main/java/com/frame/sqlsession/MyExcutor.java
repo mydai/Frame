@@ -12,8 +12,9 @@ public class MyExcutor implements Excutor{
 	private MyConfiguration xmlConfiguration = new MyConfiguration();
 	
 	@Override
-	public <T> T query(String sql, Object parameter) {
+	public <T>T query(String sql, Object parameter) {
 		Connection connection = getConnection();
+		//新建结果集
 		ResultSet set = null;
 		PreparedStatement pre = null;
 		try{

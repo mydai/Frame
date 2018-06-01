@@ -16,3 +16,34 @@
 *.classpath
 *.project
 */.externalToolBuilders/
+redis/test-output/bullet_point.png
+redis/test-output/collapseall.gif
+redis/test-output/testng.css
+redis/test-output/testng-results.xml
+redis/test-output/testng-reports.js
+redis/test-output/testng-reports.css
+redis/test-output/testng-failed.xml
+redis/test-output/skipped.png
+redis/test-output/passed.png
+redis/test-output/old/index.html
+redis/test-output/old/Default suite/toc.html
+redis/test-output/old/Default suite/testng.xml.html
+redis/test-output/old/Default suite/reporter-output.html
+redis/test-output/old/Default suite/methods.html
+redis/test-output/old/Default suite/methods-not-run.html
+redis/test-output/old/Default suite/methods-alphabetical.html
+redis/test-output/old/Default suite/main.html
+redis/test-output/old/Default suite/index.html
+redis/test-output/old/Default suite/groups.html
+redis/test-output/old/Default suite/Default test.properties
+redis/test-output/old/Default suite/classes.html
+redis/test-output/navigator-bullet.png
+redis/test-output/junitreports/TEST-redis.Test1.xml
+redis/test-output/junitreports/TEST-redis.test.xml
+redis/test-output/jquery-1.7.1.min.js
+redis/test-output/index.html
+redis/test-output/failed.png
+redis/test-output/emailable-report.html
+redis/test-output/Default suite/testng-failed.xml
+redis/test-output/Default suite/Default test.xml
+redis/test-output/Default suite/Default test.html
