@@ -1,4 +1,4 @@
-package redis;
+package redis2;
 
 import java.util.ArrayList;  
 import java.util.HashMap;  
@@ -7,11 +7,23 @@ import java.util.Map;
 import org.springframework.context.ApplicationContext;  
 import org.springframework.context.support.ClassPathXmlApplicationContext;  
   
+/**
+ * 
+ * 
+ * <b>类名称：</b>TestRedis<br/>
+ * <b>类描述：</b>redis集群<br/>
+ * <b>创建人：</b>cuidaidai<br/>
+ * <b>修改人：</b>cuidaidai<br/>
+ * <b>修改时间：</b>2018年6月10日 下午9:34:33<br/>
+ * <b>修改备注：</b><br/>
+ * @version 1.0.0<br/>
+ *
+ */
 public class TestRedis {  
       
     public static void main(String[] args) throws Exception {  
         @SuppressWarnings("resource")  
-        ApplicationContext context=new ClassPathXmlApplicationContext("classpath:/redis1/applicationContext-redis.xml");  
+        ApplicationContext context=new ClassPathXmlApplicationContext("classpath:/redis2/applicationContext-redis.xml");  
         RedisUtil redisUtil=(RedisUtil) context.getBean("redisUtil");  
           
         //=====================testString======================  
