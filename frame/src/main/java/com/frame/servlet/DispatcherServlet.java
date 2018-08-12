@@ -28,6 +28,7 @@ public class DispatcherServlet extends HttpServlet{
         super();
     }
 
+    //初始化方法
     public void init(ServletConfig config) throws ServletException {
 	    super.init(config); 
         // 包扫描,获取包中的文件
@@ -43,6 +44,7 @@ public class DispatcherServlet extends HttpServlet{
         ioc();
     }
 
+    //根据不同的注解来获取不同类的实例
     private void filterAndInstance() throws Exception {
         if (packageNames.size() <= 0) {
             return;
@@ -65,6 +67,7 @@ public class DispatcherServlet extends HttpServlet{
         }
     }
 
+    //将被Quatifier注解休斯的类的实例注入到对应的类中
     private void ioc() {
 
         if (instanceMap.isEmpty())
@@ -87,7 +90,7 @@ public class DispatcherServlet extends HttpServlet{
                 }
             }
         }
-        SpringmvcController wuqi = (SpringmvcController) instanceMap.get("wuqi");
+        SpringmvcController wuqi = (SpringmvcController) instanceMap.get("daidai");
         System.out.print(wuqi);
     }
 
@@ -147,6 +150,9 @@ public class DispatcherServlet extends HttpServlet{
         this.doPost(req, resp);
     }
 
+    /**
+     * 用于处理请求,根据请求路径调用不同的controller
+     */
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String url = req.getRequestURI();

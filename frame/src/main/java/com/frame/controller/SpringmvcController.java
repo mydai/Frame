@@ -9,7 +9,7 @@ import com.frame.annotation.RequestMapping;
 import com.frame.service.MyService;
 import com.frame.service.SpringmvcService;
 
-@Controller("wuqi")
+@Controller("daidai")
 public class SpringmvcController {
 
 	@Quatifier("MyServiceImpl")
